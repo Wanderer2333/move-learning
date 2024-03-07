@@ -1,0 +1,16 @@
+[package]
+name = "move-learning"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyAddr = "aa170c44b436c13762b692c99678356f2e12bf9fc32107ac1d3c7513a08b50b4"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
