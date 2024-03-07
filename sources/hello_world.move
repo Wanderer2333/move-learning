@@ -1,4 +1,4 @@
-address Lesson1{
+address MyAddr{
 ///doc comments
 //regular single line comments
 /*
@@ -8,7 +8,7 @@ module hello_world{
     use std::string::{String,utf8, is_empty};
     #[test_only]
     use aptos_std::debug;
-    friend Lesson1::m;
+    friend MyAddr::m;
 
     const CONST :u8 =18;
 
@@ -64,8 +64,8 @@ module hello_world{
 }
 
 module m {
-    use Lesson1::hello_world;
-    use Lesson1::hello_world::{Sth, Person};
+    use MyAddr::hello_world;
+    use MyAddr::hello_world::{Sth, Person};
 
 
     fun call_person_foo(sth:Sth): Person {
